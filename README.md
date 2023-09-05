@@ -14,6 +14,7 @@ Many thanks to [@FernandoTheRojo](https://twitter.com/fernandotherojo) for the S
 - Next.js
 - Expo Router
 - pnpm
+- TODO: DockerFile
 
 ## 🗂 Folder layout
 
