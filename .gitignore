@@ -8,6 +8,7 @@
 
 # expo
 **/.expo/*
+**/expo-env.d.ts
 
 # next.js
 **/.next/*
@@ -15,6 +16,7 @@
 
 # tamagui
 **/.tamagui/*
+**/public/tamagui.css
 
 # production
 /build
@@ -26,6 +28,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+**.env
 .env.local
 .env.development.local
 .env.test.local
@@ -42,5 +45,30 @@ yarn-error.log*
 THUMBS_DB
 thumbs.db
 
-# turbo build log
-**/.turbo/*
+# ui
+
+dist/
+.DS_Store
+THUMBS_DB
+node_modules/
+types/
+
+# Cloudflare D1
+**/.wrangler/*
+**/.dev.vars
+.turbo
+
+# Expo
+apps/expo/ios/**
+apps/expo/android/**
+
+# Expo Builds
+**/*.apk
+**/*.aab
+**/*.ipa
+
+# PWA
+**/sw.js
+**/workbox-*.js
+**/fallback-*.js
+**/service-worker.js

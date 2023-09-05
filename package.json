@@ -12,11 +12,14 @@
     "build": "turbo run build --filter=@my/ui",
     "build:web": "turbo run build --filter=next-app",
     "start:web": "turbo run start --filter=next-app",
+    "build:android": "cd apps/expo && pnpm android",
+    "build:ios": "cd apps/expo && pnpm ios",
     "upgrade:tamagui": "pnpm up -r '*tamagui*'@latest '@tamagui/*'@latest react-native-web-lite@latest",
     "fix": "manypkg fix",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "pnpm run build",
-    "check-deps": "check-dependency-version-consistency ."
+    "check-deps": "check-dependency-version-consistency .",
+    "clean:workspaces": "turbo clean"
   },
   "resolutions": {
     "react": "^18.2.0",
@@ -29,6 +32,7 @@
     "@babel/runtime": "^7.18.9",
     "@manypkg/cli": "^0.19.1",
     "check-dependency-version-consistency": "^3.0.3",
+    "cross-env": "^7.0.3",
     "eslint": "^8.21.0",
     "node-gyp": "^9.3.1",
     "prettier": "^2.7.1",
