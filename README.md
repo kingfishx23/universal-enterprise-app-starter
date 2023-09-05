@@ -6,13 +6,14 @@ This monorepo is a starter for an Expo + Next.js + Tamagui + Solito app, but foc
 
 Many thanks to [@FernandoTheRojo](https://twitter.com/fernandotherojo) for the Solito starter monorepo which this was forked from. Check out his [talk about using expo + next together at Next.js Conf 2021](https://www.youtube.com/watch?v=0lnbdRweJtA).
 
-## 📦 Included packages
+## 📦 Included packages / Tech Stacks
 
 - [Tamagui](https://tamagui.dev) 🪄
 - [solito](https://solito.dev) for cross-platform navigation
 - Expo SDK
 - Next.js
 - Expo Router
+- pnpm
 
 ## 🗂 Folder layout
 
@@ -31,15 +32,15 @@ You can add other folders inside of `packages/` if you know what you're doing an
 
 ## 🏁 Start the app
 
-- Install dependencies: `yarn`
+- Install dependencies: `pnpm i` / `pnpm install`
 
-- Next.js local dev: `yarn web`
-
-To run with optimizer on in dev mode (just for testing, it's faster to leave it off): `yarn web:extract`. To build for production `yarn web:prod`.
+- Next.js local dev: `pnpm web`
 
 To see debug output to verify the compiler, add `// debug` as a comment to the top of any file.
 
-- Expo local dev: `yarn native`
+- Expo local dev: `pnpm native`
+- Expo run:android: `pnpm build:android`
+- Expo run:ios: `pnpm build:ios`
 
 ## UI Kit
 
